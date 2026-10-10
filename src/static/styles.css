@@ -5,7 +5,7 @@
   font-family: Arial, sans-serif;
 }
 
-body {
+body { 
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
@@ -72,6 +72,80 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e1e5ee;
+}
+
+.participants h5 {
+  margin-bottom: 6px;
+  color: #34425f;
+  font-size: 0.9rem;
+}
+
+.participant-list {
+  list-style: none;
+  color: #4c566a;
+  font-size: 0.92rem;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 32px;
+  padding: 2px 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  display: inline-grid;
+  flex: 0 0 30px;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: #687386;
+  cursor: pointer;
+}
+
+.remove-participant:hover {
+  border-color: #f0c7c4;
+  background: #fff0ef;
+  color: #b42318;
+}
+
+.remove-participant:focus-visible {
+  outline: 2px solid #1a237e;
+  outline-offset: 2px;
+}
+
+.remove-participant:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.remove-participant svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.participant-list .empty-participants {
+  color: #707988;
+  font-style: italic;
+  padding: 2px 0;
 }
 
 .form-group {
